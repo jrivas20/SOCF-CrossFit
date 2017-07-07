@@ -1,0 +1,954 @@
+body {
+  background-color: black;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  
+}
+#number{
+  float: right;
+  font-weight: bold;
+  color: white;
+}
+#schedule{
+  padding-top: 10px;
+}
+.nav navbar-nav{
+    vertical-align: center;
+  align-content: center;
+}
+
+#daniel{
+  float: right;
+  font-family: 'Pacifico', cursive;
+}
+#review{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+}
+        
+.container-fluid{
+  vertical-align: center;
+  align-content: center;
+
+}
+.navbar-nav>li>a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#logo{
+  width: 124px;
+  height: 50px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-weight: bold;
+
+}
+#socross {
+  width: 100%;
+  max-height: 1000px;
+  
+}
+.navbar {
+	position: fixed;
+  background: black;
+  opacity: .7;
+  filter: alpha(opacity=30);
+
+}
+
+.col-md-3{
+  color: blue;
+
+}
+
+.col-md-4 {
+	border-right: 3px solid black;
+	height: 200px;
+}
+
+#col1 {
+	background-image: url("./assets/images/comm.jpg");
+	color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#col2 {
+	background-image: url("/Users/user/Desktop/ProjectCrossfit/assets/images/cfit.jpg");
+	color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#col3 {
+	background-image: url("/Users/user/Desktop/ProjectCrossfit/assets/images/ccs.jpg");
+	color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.innercontact {
+	margin-top: 100px;
+
+}
+
+#contact{
+    padding:10px 0 10px;
+  }
+  .contact-text{
+    margin:45px auto;
+  }
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+/* Input Styles */
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+/* Send Button Styles */
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#8BC3A3;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+  .form-btn:active{
+    opacity: 0.9;
+  }
+center{
+  margin-top:330px;
+}
+input {
+    position: relative;
+    z-index: 9999;
+}
+@import "compass/css3";
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #808080;
+  color: #fff;
+  margin: 1em;
+  &:hover, &:focus {
+     color: #fff;
+     background: #333;
+  }
+}
+.static-img {
+  display: block; 
+}
+iframe {
+   max-width: 100%; 
+}
+/* From https://codepen.io/chriscoyier/full/kycDp */
+.map-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  padding-top: 38%;
+  position: relative;
+  display: none; /* Hide for small screens */
+
+  iframe {
+    width: 100%;
+    height: 100%; /* had to specify height/width */
+    position: absolute;
+    top: 0; 
+    right: 0;
+    left: 0; 
+    bottom: 0;   
+  }
+}
+/* Medium Screens */
+@media all and (min-width: 34.375em) {
+  .map-container {
+    display: block;
+  } 
+  .static-img {
+    display: none; 
+  }
+}
+
+#map-canvas{
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+}
+
+#col4, #col6 {
+	background: rgba(210,255,82,1);
+background: -moz-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(210,255,82,1) 15%, rgba(187,247,76,1) 45%, rgba(145,232,66,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(210,255,82,1)), color-stop(15%, rgba(210,255,82,1)), color-stop(45%, rgba(187,247,76,1)), color-stop(100%, rgba(145,232,66,1)));
+background: -webkit-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(210,255,82,1) 15%, rgba(187,247,76,1) 45%, rgba(145,232,66,1) 100%);
+background: -o-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(210,255,82,1) 15%, rgba(187,247,76,1) 45%, rgba(145,232,66,1) 100%);
+background: -ms-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(210,255,82,1) 15%, rgba(187,247,76,1) 45%, rgba(145,232,66,1) 100%);
+background: linear-gradient(to right, rgba(210,255,82,1) 0%, rgba(210,255,82,1) 15%, rgba(187,247,76,1) 45%, rgba(145,232,66,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+	height: 200px;
+	color: white;
+
+}
+
+
+#col5, #col7 {
+	background: rgba(40,67,92,1);
+background: -moz-linear-gradient(left, rgba(40,67,92,1) 8%, rgba(35,105,183,1) 57%, rgba(32,124,229,1) 82%, rgba(32,124,229,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(8%, rgba(40,67,92,1)), color-stop(57%, rgba(35,105,183,1)), color-stop(82%, rgba(32,124,229,1)), color-stop(100%, rgba(32,124,229,1)));
+background: -webkit-linear-gradient(left, rgba(40,67,92,1) 8%, rgba(35,105,183,1) 57%, rgba(32,124,229,1) 82%, rgba(32,124,229,1) 100%);
+background: -o-linear-gradient(left, rgba(40,67,92,1) 8%, rgba(35,105,183,1) 57%, rgba(32,124,229,1) 82%, rgba(32,124,229,1) 100%);
+background: -ms-linear-gradient(left, rgba(40,67,92,1) 8%, rgba(35,105,183,1) 57%, rgba(32,124,229,1) 82%, rgba(32,124,229,1) 100%);
+background: linear-gradient(to right, rgba(40,67,92,1) 8%, rgba(35,105,183,1) 57%, rgba(32,124,229,1) 82%, rgba(32,124,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28435c', endColorstr='#207ce5', GradientType=1 );
+	height: 200px;
+	color: white;
+
+}
+
+#aboutBox {
+  color: white;
+	height: 400px;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+   url("/Users/user/Desktop/ProjectCrossfit/assets/images/bgpic.jpeg")
+
+}
+
+
+#contact {
+  background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#split {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; 
+  background-color: #00eb1b;
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#moreinfo {
+text-align: center;
+vertical-align: middle;
+color: white;
+}
+
+.infoForm {
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+
+input[type="text"], textarea {
+
+  background-color : #d1d1d1; 
+
+}
+
+.neon {
+  color: #a7cc49;
+}
+
+.navy {
+  color: #051646;
+}
+
+#aboutBox {
+  color: white;
+  height: 400px;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+   url("../images/bgpic.jpeg")
+}
+#about {
+  text-align: center;
+  font-family: 'Anton', sans-serif
+}
+
+#aboutContent {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  font-family: 'Anton', sans-serif
+
+}
+h4{
+  font-size: 23px;
+
+}
+
+#siteFooter {
+  clear: both;
+  color: white;
+  background-color: black;
+  text-align: center;
+background-image: url("https://www.transparenttextures.com/patterns/mocha-grunge.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.borderlessH1 {
+  margin: 0;
+  padding: 0;
+}
+
+#xcJournal {
+  float: left;
+}
+
+#xcJournal2 {
+  float: right;
+}
+.callout {
+  background-color: black;
+}
+.calloutt {
+  background-color: white;
+  padding: 50px;
+}
+.quote {
+  padding: 20px;
+  font-size: 25px;
+  background-color: black;
+  text-align: center;
+  color: #a7cc49;
+  font-family: 'Lobster', cursive;
+  line-height: 5px;
+}
+
+
+#col1 {
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url("../images/comm.jpg");
+  background-size: cover;
+}
+
+
+#col2 {
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url("../images/cfit.jpg");
+  background-size: cover;
+}
+
+#col3 {
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+   url("../images/ccs.jpg");
+  background-size: cover;
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;
+      background: #fff;
+}
+
+
+.social {
+  width: 55px;
+  height: 62px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.required{
+  background-color: white;
+  color: black;
+  font-family: 'Satisfy', cursive;
+  font-size: 10px;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+  background-color: white;
+  color: black;
+  bottom: 20px;
+  
+  width: 100%;
+  
+  font-size: 26px;
+
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.item-1{
+  animation-name: anim-1;
+}
+
+.item-2{
+  animation-name: anim-2;
+}
+
+.item-3{
+  animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+  0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+  0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+  0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+.mapa{
+  width: 100%;
+  height: 500px;
+  margin: 0;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S4 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- HTC One ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+.final{
+  color: white;
+}
